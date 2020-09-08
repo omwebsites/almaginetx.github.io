@@ -361,6 +361,30 @@ if(pokeposition==34){
 powerc();
 }
 }
+    
+    document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+       e = e || window.event;
+
+       if (e.keyCode == '38') {
+           // up arrow
+           power();
+       }
+       else if (e.keyCode == '40') {
+           // down arrow
+           power();
+       }
+       else if (e.keyCode == '37') {
+          moveleft();
+       }
+       else if (e.keyCode == '39') {
+          moveright();
+       }
+
+}
+    
 </script>
 
 </body>
